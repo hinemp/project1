@@ -117,7 +117,7 @@ nav>ul>li>a {
 }
 
 #img_wrapper {
-    background-image: url("/project1/images/wadeSidebar.jpg");
+    background-image: url("images/wadeSidebar.jpg");
     background-size: cover;
     background-position: center;
     height: 100%;
