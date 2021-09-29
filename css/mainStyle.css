@@ -1,9 +1,8 @@
 :root {
     --accent-rich-black: #111318;
     --bg-gray: #565254;
-    --text-bg: #E0DFD5;
-    --red: #DF2935;
-    --orange: #F08700;
+    --blue: #0BD3D3;
+    --pink: #F890E7;
 }
 
 body {
@@ -40,18 +39,18 @@ header {
     margin-right: auto;
     margin-top: 3px;
     height: 90px;
-    filter: drop-shadow(5px 5px 3px var(--red));
+    filter: drop-shadow(5px 5px 3px var(--pink));
 }
 
 #nav_banner_spacer {
     display: flex;
     align-items: center;
-    justify-content: center;
-    min-height: 4vh;
+    justify-content: space-between;
+    height: 4vh;
     margin: 0;
     padding: 0;
     width: 100%;
-    background-color: var(--orange);
+    background-color: var(--pink);
     border-top-style: solid;
     border-bottom-style: solid;
     border-color: #111318;
@@ -60,8 +59,19 @@ header {
 #nav_banner_spacer>h1 {
     font-size: 80%;
     font-family: sans-serif;
-    padding: 0;
+    padding: 0 0 0 0.5rem;
     margin: 0;
+}
+
+#login {
+    display: flex;
+    border-radius: 15px;
+}
+
+#login>input,
+span,
+a {
+    margin-right: 0.5rem;
 }
 
 
@@ -77,13 +87,46 @@ nav {
     flex-direction: column;
     justify-content: space-between;
     max-width: 10em;
-    background-color: var(--orange);
+    background-color: var(--accent-rich-black);
     border: solid inset var(--accent-rich-black);
     border-right: solid var(--accent-rich-black);
 }
 
+nav>ul {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    flex-grow: 1;
+    justify-content: space-evenly;
+    max-height: 50%;
+}
+
+nav>ul>li {
+    display: flex;
+    justify-content: space-around;
+    background-color: var(--pink);
+    border: solid var(--accent-rich-black);
+}
+
+nav>ul>li>a {
+    color: var(--blue);
+    font-family: sans-serif;
+    font-weight: 500;
+    padding: .3rem;
+}
+
+#img_wrapper {
+    background-image: url("/project1/images/wadeSidebar.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    margin-top: -5px;
+    border: solid var(--accent-rich-black);
+}
+
 #nav_inner_container {
-    background-color: var(--text-bg);
+    background-color: var(--pink);
     margin: 0;
     padding: 0;
     border-top: solid var(--accent-rich-black);
@@ -93,7 +136,7 @@ nav {
 #nav_inner_container>h1 {
     font-size: 70%;
     font-family: sans-serif;
-    color: rgb(61, 61, 61);
+    color: var(--blue);
     padding: 5%;
     margin: 0;
 }
