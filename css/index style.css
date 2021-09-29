@@ -97,7 +97,3 @@ nav {
     padding: 5%;
     margin: 0;
 }
-
-#nav_inner_spacer {
-    min-height: 1vh flex-grow: 2;
-}
