@@ -1,22 +1,35 @@
+:root {
+    --accent-rich-black: #111318;
+    --bg-gray: #565254;
+    --text-bg: #E0DFD5;
+    --red: #DF2935;
+    --orange: #F08700;
+}
+
 body {
+    display: flex;
+    flex-direction: column;
     padding: 0;
     margin: 0;
     width: 100vw;
     height: 100vh;
-    background-color: #565254;
+    background-color: var(--bg-gray);
 }
 
 header {
     width: 100vw;
+    min-height: 100px;
+    height: 10vh;
     padding: 0;
     margin: 0;
 }
 
 #skyline_banner {
-    /* position: absolute; */
     width: 100vw;
-    height: 100px;
+    height: 100%;
     opacity: 0.5;
+    margin: 0;
+    padding: 0;
 }
 
 #logo_svg {
@@ -25,6 +38,66 @@ header {
     right: 0;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 5px;
+    margin-top: 3px;
     height: 90px;
+    filter: drop-shadow(5px 5px 3px var(--red));
+}
+
+#nav_banner_spacer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 4vh;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-color: var(--orange);
+    border-top-style: solid;
+    border-bottom-style: solid;
+    border-color: #111318;
+}
+
+#nav_banner_spacer>h1 {
+    font-size: 80%;
+    font-family: sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+
+/* BEGINNING OF ACTUAL WEBPAGE, NOT HEADER CONTENT */
+
+#under_banner_container {
+    display: flex;
+    height: 100%;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 10em;
+    background-color: var(--orange);
+    border: solid inset var(--accent-rich-black);
+    border-right: solid var(--accent-rich-black);
+}
+
+#nav_inner_container {
+    background-color: var(--text-bg);
+    margin: 0;
+    padding: 0;
+    border-top: solid var(--accent-rich-black);
+    border-bottom: solid var(--accent-rich-black);
+}
+
+#nav_inner_container>h1 {
+    font-size: 70%;
+    font-family: sans-serif;
+    color: rgb(61, 61, 61);
+    padding: 5%;
+    margin: 0;
+}
+
+#nav_inner_spacer {
+    min-height: 1vh flex-grow: 2;
 }
