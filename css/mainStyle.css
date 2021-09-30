@@ -31,7 +31,7 @@ header {
 }
 
 #banner_container {
-    background-image: url(/images/miamicitynew.jpg);
+    background-image: url(https://github.com/hinemp/project1/raw/master/images/miamicitynew.jpg);
     background-size: cover;
     background-position: center;
     height: 100%;
@@ -49,8 +49,6 @@ header {
     margin-top: 3px;
     height: 90px;
     filter: drop-shadow(5px 5px 3px var(--pink));
-    animation-name: logo_animation;
-    animation-duration: 6s;
 }
 
 #nav_banner_spacer {
@@ -142,7 +140,7 @@ nav>ul>li>a {
 }
 
 #img_wrapper {
-    background-image: url(/images/wadesidebar.jpg);
+    background-image: url(https://github.com/hinemp/project1/raw/master/images/wadesidebar.jpg);
     background-size: cover;
     background-position: center;
     height: 100%;
