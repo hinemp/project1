@@ -161,6 +161,21 @@ nav>ul>li>a {
     margin: 0;
 }
 
+main {
+    flex-grow: 2;
+    display: flex;
+    /* min-width: 600px; */
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #D0D0D0;
+    background-image: url(https://github.com/hinemp/project1/raw/master/images/main%20images/main-background.png);
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: overlay;
+    height: 100%;
+}
+
 
 /* MEDIA QUERIES */
 
