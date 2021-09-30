@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif&display=swap');
 main {
     flex-grow: 2;
     display: flex;
@@ -5,12 +6,11 @@ main {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    background-color: #313131;
+    background-color: #D0D0D0;
     height: 100%;
 }
 
-#top_row,
-#bottom_row {
+#top_row {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -18,8 +18,6 @@ main {
     height: 50%;
     width: 100%;
 }
-
-#top_row {}
 
 #roster_first_row,
 #roster_second_row,
@@ -54,14 +52,48 @@ main {
     border-radius: 20px;
 }
 
-#heat_title,
+#heat_title {
+    display: flex;
+    flex-direction: column;
+    height: 80%;
+    width: 50%;
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    outline: solid 15px var(--blue);
+    border-radius: 20px;
+}
+
+#heat_title>img {
+    max-height: 25%;
+    flex-shrink: 2;
+}
+
+#heat_title>p {
+    color: white;
+    margin: 0;
+    padding: 0;
+    font-family: 'PT Serif', serif;
+    font-size: 1.2vw;
+    padding: 0.5rem;
+}
+
+#heat_title>p>a {
+    color: var(--blue);
+    margin: 0;
+    padding: 0;
+    font-family: 'PT Serif', serif;
+    font-size: 1vw;
+    padding: 16
+}
+
 #heat_21_roster {
     width: 300px;
     height: 300px;
     background-color: black;
     margin: 0;
     padding: 0;
-    outline: solid 15px var(--pink);
+    outline: solid 15px var(--blue);
     border-radius: 20px;
 }
 
@@ -74,32 +106,29 @@ main {
     justify-content: space-around;
     align-items: center;
     width: 100%;
-    height: 100%;
+    height: 70%;
 }
 
 #youtube_video_container>iframe {
-    width: 60%;
-    height: 50%;
-    margin: 30px;
+    width: 80%;
+    height: 90%;
+    margin: 0;
+    padding: 0;
     border: solid 20px var(--blue);
     border-radius: 20px;
 }
 
 @media (max-width: 650px) {
-    main {
-        /* overflow: auto;
-        height: 100vh; */
-    }
-    #heat_title,
-    #heat_21_roster {
-        margin-top: 60px;
-        margin-bottom: 60px;
-    }
     #youtube_video_container {
         display: none;
     }
     #top_row {
         flex-direction: column;
+        justify-content: space-around;
+        height: 100%;
+    }
+    #heat_title {
+        width: 90%;
         height: 50%;
     }
 }

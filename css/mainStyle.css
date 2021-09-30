@@ -73,6 +73,7 @@ header {
 
 #login {
     display: flex;
+    flex-shrink: 2;
     justify-content: baseline;
     border-radius: 15px;
 }
@@ -103,7 +104,6 @@ nav {
     justify-content: space-between;
     max-width: 10vw;
     width: 10vw;
-    min-width: 600px;
     background-color: black;
     border: solid var(--blue);
 }
@@ -164,7 +164,7 @@ nav>ul>li>a {
         flex-shrink: 2;
     }
     header {
-        display: none;
+        /* display: none; */
     }
     nav {
         flex-direction: row;
