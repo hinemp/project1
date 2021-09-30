@@ -122,6 +122,9 @@ main {
     border-radius: 20px;
 }
 
+
+/* MEDIA QUERIES */
+
 @media (max-width: 650px) {
     #youtube_video_container {
         display: none;
@@ -138,5 +141,24 @@ main {
     #heat_title {
         width: 90vw;
         height: 50%;
+    }
+}
+
+@media (max-height: 900px) {
+    #youtube_video_container {
+        display: none;
+    }
+    #nav_banner_spacer {
+        height: 6vh;
+    }
+    #top_row {
+        height: 100%;
+    }
+    #heat_title {
+        min-height: 300px;
+        height: 85%;
+    }
+    #heat_21_roster {
+        display: none;
     }
 }
