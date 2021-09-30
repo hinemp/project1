@@ -6,7 +6,7 @@
 }
 
 html {
-    min-width: 600px;
+    /* min-width: 600px; */
 }
 
 body {
@@ -15,7 +15,7 @@ body {
     overflow: hidden;
     padding: 0;
     margin: 0;
-    min-width: 600px;
+    /* min-width: 600px; */
     width: 100vw;
     height: 100vh;
     background-color: var(--pink);
@@ -59,7 +59,7 @@ header {
     justify-content: space-around;
     height: 4vh;
     min-height: 2.5em;
-    min-width: 600px;
+    /* min-width: 600px; */
     background-color: var(--pink);
     border: 6px solid var(--blue);
 }
@@ -82,7 +82,8 @@ span,
 a {
     font-family: sans-serif;
     font-size: 80%;
-    margin-right: 0.5rem;
+    margin-left: 0.25rem;
+    margin-right: 0.25rem;
     margin-bottom: 0;
     padding-bottom: 0;
 }
@@ -93,6 +94,7 @@ a {
 #under_banner_container {
     display: flex;
     height: 100%;
+    min-width: 600px;
 }
 
 nav {
@@ -101,7 +103,7 @@ nav {
     justify-content: space-between;
     max-width: 10vw;
     width: 10vw;
-    min-width: 10rem;
+    min-width: 600px;
     background-color: black;
     border: solid var(--blue);
 }
@@ -199,3 +201,5 @@ nav>ul>li>a {
         display: none;
     }
 }
+
+@media (max-width: 600px) {}
