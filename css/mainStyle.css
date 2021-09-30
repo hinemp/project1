@@ -1,19 +1,24 @@
 :root {
     --accent-rich-black: #111318;
-    --bg-gray: #565254;
+    --bg-gray: #D0D0D0;
     --blue: #0BD3D3;
     --pink: #F890E7;
+}
+
+html {
+    min-width: 650px;
 }
 
 body {
     display: flex;
     flex-direction: column;
+    overflow: hidden;
     padding: 0;
     margin: 0;
     min-width: 600px;
-    width: 100%;
+    width: 100vw;
     height: 100vh;
-    background-color: var(--bg-gray);
+    background-color: var(--pink);
 }
 
 header {
@@ -22,22 +27,17 @@ header {
     height: 10vh;
     padding: 0;
     margin: 0;
+    border: 6px inset var(--blue);
 }
 
 #banner_container {
-    background-image: url(project1\images\miamicity.jpg);
+    background-image: url(/project1/images/miamicitynew.jpg);
+    background-size: cover;
+    background-position: center;
     height: 100%;
     min-height: 100px;
     padding: 0;
     margin: 0;
-}
-
-#skyline_banner {
-    width: 100vw;
-    height: 100%;
-    opacity: 0.5;
-    margin: 0;
-    padding: 0;
 }
 
 #logo_svg {
@@ -49,6 +49,8 @@ header {
     margin-top: 3px;
     height: 90px;
     filter: drop-shadow(5px 5px 3px var(--pink));
+    animation-name: logo_animation;
+    animation-duration: 6s;
 }
 
 #nav_banner_spacer {
@@ -60,9 +62,7 @@ header {
     width: 100%;
     min-width: 600px;
     background-color: var(--pink);
-    border-top-style: solid;
-    border-bottom-style: solid;
-    border-color: var(--blue);
+    border: 6px inset var(--blue);
 }
 
 #nav_banner_spacer>h1 {
@@ -95,7 +95,6 @@ a {
     word-wrap: break-word;
     display: block;
     line-height: 1em;
-    /* a */
     max-height: 2em;
 }
 
@@ -111,10 +110,11 @@ nav {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    max-width: 10em;
+    max-width: 10vw;
+    width: 10vw;
+    min-width: 10rem;
     background-color: var(--blue);
-    border: solid inset var(--blue);
-    border-right: solid var(--blue);
+    border: 6px inset var(--blue);
 }
 
 nav>ul {
@@ -146,7 +146,6 @@ nav>ul>li>a {
     background-size: cover;
     background-position: center;
     height: 100%;
-    margin-top: -5px;
     border: solid var(--blue);
 }
 
@@ -154,8 +153,7 @@ nav>ul>li>a {
     background-color: var(--pink);
     margin: 0;
     padding: 0;
-    border-top: solid var(--blue);
-    border-bottom: solid var(--blue);
+    border: solid var(--blue);
 }
 
 #nav_inner_container>h1 {

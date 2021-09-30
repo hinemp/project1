@@ -1,0 +1,51 @@
+main {
+    flex-grow: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #D0D0D0;
+}
+
+#top_row,
+#bottom_row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 50%;
+    width: 100%;
+}
+
+#roster_first_row,
+#roster_second_row,
+#roster_third_row,
+#roster_fourth_row {
+    display: flex;
+    width: 100%;
+    height: 75px;
+}
+
+#roster_first_row>img:hover,
+#roster_second_row>img:hover,
+#roster_third_row>img:hover,
+#roster_fourth_row>img:hover {
+    border: solid #F890E7;
+    border-radius: 20px;
+}
+
+#heat_title,
+#heat_21_roster,
+#last_game_box,
+#youtube_video_container {
+    width: 300px;
+    height: 300px;
+    background-color: #767676;
+    margin: 0;
+    padding: 0;
+    border: solid 10px black;
+    border-radius: 20px;
+}
+
+#heat_21_roster {
+    background-color: black;
+}
