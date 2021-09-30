@@ -58,8 +58,7 @@ header {
     align-items: center;
     justify-content: space-around;
     height: 4vh;
-    min-height: 2.5em;
-    /* min-width: 600px; */
+    /* min-height: 2.5em; */
     background-color: var(--pink);
     border: 6px solid var(--blue);
 }
@@ -163,15 +162,12 @@ nav>ul>li>a {
         flex-direction: column;
         flex-shrink: 2;
     }
-    header {
-        /* display: none; */
-    }
     nav {
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
         max-width: 100%;
-        width: 100%;
+        width: 100vw;
         flex-shrink: 2;
         min-height: none;
         height: 7%;
@@ -202,4 +198,17 @@ nav>ul>li>a {
     }
 }
 
-@media (max-width: 600px) {}
+@media (max-width: 600px) {
+    nav {
+        width: 99vw;
+    }
+    #login {
+        width: 100vw;
+    }
+    #check {
+        display: none;
+    }
+    #login>span {
+        display: none;
+    }
+}
