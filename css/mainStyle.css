@@ -31,7 +31,7 @@ header {
 }
 
 #banner_container {
-    background-image: url(/project1/images/miamicitynew.jpg);
+    background-image: url(/images/miamicitynew.jpg);
     background-size: cover;
     background-position: center;
     height: 100%;
@@ -142,7 +142,7 @@ nav>ul>li>a {
 }
 
 #img_wrapper {
-    background-image: url(/project1/images/wadesidebar.jpg);
+    background-image: url(/images/wadesidebar.jpg);
     background-size: cover;
     background-position: center;
     height: 100%;
