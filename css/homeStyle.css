@@ -2,8 +2,10 @@ main {
     flex-grow: 2;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    background-color: #D0D0D0;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #313131;
+    height: 100%;
 }
 
 #top_row,
@@ -16,36 +18,87 @@ main {
     width: 100%;
 }
 
+#top_row {}
+
 #roster_first_row,
 #roster_second_row,
 #roster_third_row,
 #roster_fourth_row {
     display: flex;
+    justify-content: space-around;
     width: 100%;
     height: 75px;
 }
 
-#roster_first_row>img:hover,
-#roster_second_row>img:hover,
-#roster_third_row>img:hover,
-#roster_fourth_row>img:hover {
-    border: solid #F890E7;
+#roster_first_row>a,
+#roster_second_row>a,
+#roster_third_row>a,
+#roster_fourth_row>a {
+    padding: 0;
+    margin: 0;
+}
+
+#roster_first_row>a>img,
+#roster_second_row>a>img,
+#roster_third_row>a>img,
+#roster_fourth_row>a>img {
+    width: 75px;
+}
+
+#roster_first_row>a:hover,
+#roster_second_row>a:hover,
+#roster_third_row>a:hover,
+#roster_fourth_row>a:hover {
+    border: solid var(--blue);
     border-radius: 20px;
 }
 
 #heat_title,
-#heat_21_roster,
-#last_game_box,
-#youtube_video_container {
+#heat_21_roster {
     width: 300px;
     height: 300px;
-    background-color: #767676;
+    background-color: black;
     margin: 0;
     padding: 0;
-    border: solid 10px black;
+    outline: solid 15px var(--pink);
     border-radius: 20px;
 }
 
 #heat_21_roster {
-    background-color: black;
+    background-color: var(--blue);
+}
+
+#youtube_video_container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+#youtube_video_container>iframe {
+    width: 60%;
+    height: 50%;
+    margin: 30px;
+    border: solid 20px var(--blue);
+    border-radius: 20px;
+}
+
+@media (max-width: 650px) {
+    main {
+        /* overflow: auto;
+        height: 100vh; */
+    }
+    #heat_title,
+    #heat_21_roster {
+        margin-top: 60px;
+        margin-bottom: 60px;
+    }
+    #youtube_video_container {
+        display: none;
+    }
+    #top_row {
+        flex-direction: column;
+        height: 50%;
+    }
 }
