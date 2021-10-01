@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&family=Stick+No+Bills:wght@500&display=swap');
+main {
+    display: block;
+    height: 120%;
+}
+
+main {
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #D0D0D0;
+    background-image: url(https://github.com/hinemp/project1/raw/master/images/main%20images/main-background.png);
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: overlay;
+    overflow-x: hidden;
+    overflow-y: auto;
+    height: 86%;
+}
+
+main>h1 {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 3rem;
+    margin-top: 3rem;
+    margin-bottom: 0.5rem;
+    text-align: center;
+    color: var(--blue);
+}
+
+#roster_rows_container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    /* width: 90%; */
+    /* height: 100%; */
+    margin: 2rem;
+    /* overflow-x: hidden;
+    overflow-y: auto; */
+}
+
+.roster_group {
+    display: block;
+    justify-content: space-around;
+    align-content: flex-start;
+    width: 50%;
+}
+
+.player {
+    display: flex;
+    padding: 2rem;
+}
+
+.player>img {
+    width: 10rem;
+    border: solid 0.6rem var(--blue);
+    border-radius: 1rem;
+}
+
+.player>table {
+    width: 100%;
+    background-color: black;
+    margin: 1rem;
+    border: solid 5px var(--pink);
+    border-radius: 10px;
+    font-family: 'Stick No Bills', sans-serif;
+    color: var(--pink);
+    font-size: 2rem;
+}
+
+.player>table>tbody {
+    margin: 4rem;
+}
+
+@media (max-width: 1020px) {
+    main {
+        height: 86%;
+    }
+    #roster_rows_container {
+        flex-direction: column;
+        justify-content: center;
+    }
+    .player {
+        width: 80vw;
+    }
+}
+
+@media (max-width: 900px) {
+    main {
+        height: 80%;
+    }
+    main>h1 {
+        font-size: 2rem;
+    }
+}
+
+
+/* 
+@media (max-width: 600px) {
+    main {
+        width: 100%;
+    }
+} */
+
+@media (min-width: 1020px) {
+    main {
+        width: 100%;
+    }
+}

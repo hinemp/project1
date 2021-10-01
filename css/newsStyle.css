@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&family=Karla:wght@800&family=PT+Serif&family=Stick+No+Bills:wght@500&display=swap');
+
+/* STYLE BEGINNGING */
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    background-color: #D0D0D0;
+    background-image: url(https://github.com/hinemp/project1/raw/master/images/main%20images/main-background.png);
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: overlay;
+    overflow-x: hidden;
+    overflow-y: auto;
+    height: 85%;
+    width: 100%;
+}
+
+.news_wrapper {
+    background-color: var(--blue);
+    margin: 1rem;
+    padding: 1rem;
+    border: solid 0.5rem var(--pink);
+    border-radius: 4rem;
+}
+
+.news_wrapper>h1 {
+    font-family: 'Karla', sans-serif;
+    font-size: 5rem;
+    margin: 0;
+}
+
+.news_wrapper>h2 {
+    font-family: 'Karla', sans-serif;
+    font-size: 2.5rem;
+}
+
+.news_wrapper>p {
+    font-family: 'PT Serif', serif;
+    font-size: 1.3rem;
+}
+
+.news_wrapper>a {
+    display: flex;
+    justify-content: space-around;
+}
+
+.news_wrapper>a>img {
+    width: 80%;
+}
+
+@media (max-width: 900px) {
+    main {
+        align-items: center;
+        height: 78%;
+    }
+    .news_wrapper>h1 {
+        font-size: 3rem;
+    }
+}
