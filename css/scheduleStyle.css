@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&family=Karla:wght@800&family=PT+Serif&family=Stick+No+Bills:wght@500&display=swap');
+
+/* MAIN CONTENT AREA FORMATTING */
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-end;
+    background-color: #D0D0D0;
+    background-image: url(https://github.com/hinemp/project1/raw/master/images/main%20images/main-background.png);
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: overlay;
+    overflow-x: hidden;
+    overflow-y: auto;
+    height: 89%;
+    width: 100%;
+}
+
+.game_wrapper {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--pink);
+    margin: 1rem;
+    padding: 1rem;
+    border: solid 1rem var(--blue);
+    border-radius: 2rem;
+    max-height: 10rem;
+    width: 92%;
+}
+
+.game_info_wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.game_info_wrapper>h1 {
+    font-family: 'Karla', sans-serif;
+    font-size: 2rem;
+    margin: 0;
+    padding: 0;
+}
+
+.game_info_wrapper>h2 {
+    font-family: 'PT Serif', serif;
+}
+
+#title_bubble>h1 {
+    font-family: 'Karla', sans-serif;
+    align-self: center;
+    font-size: 3rem;
+}
+
+.game_wrapper>img {
+    height: 100%;
+}
+
+@media (max-width: 900px) {
+    main {
+        align-items: center;
+        height: 82%;
+    }
+    .game_wrapper {
+        width: 75%;
+    }
+    .game_info_wrapper>h1 {
+        font-size: 1.5rem;
+    }
+    .game_info_wrapper>h2 {
+        font-size: 1rem;
+    }
+}

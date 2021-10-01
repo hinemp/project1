@@ -49,6 +49,8 @@ main {
 
 .news_wrapper>a>img {
     width: 80%;
+    border: solid var(--pink);
+    border-radius: 2rem;
 }
 
 @media (max-width: 900px) {
