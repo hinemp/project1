@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&family=Karla:wght@800&family=PT+Serif&family=Stick+No+Bills:wght@500&display=swap');
 main {
     width: 100%;
+    overflow: hidden;
 }
 
 main>h1 {
@@ -38,30 +39,30 @@ main>section {
 
 .set div:nth-child(1) {
     left: 20%;
-    animation: animate 12s linear infinite;
+    animation: animate 4s linear infinite;
 }
 
 .set div:nth-child(2) {
     left: 30%;
-    animation: animate 15s linear infinite;
+    animation: animate 12s linear infinite;
     animation-delay: -5s;
 }
 
 .set div:nth-child(3) {
     left: 45%;
-    animation: animate 20s linear infinite;
+    animation: animate 9s linear infinite;
     animation-delay: -7s;
 }
 
 .set div:nth-child(4) {
     left: 70%;
-    animation: animate 15s linear infinite;
+    animation: animate 8s linear infinite;
     animation-delay: -2s;
 }
 
 .set div:nth-child(5) {
     left: 15%;
-    animation: animate 18s linear infinite;
+    animation: animate 5s linear infinite;
     animation-delay: -6s;
 }
 
@@ -109,4 +110,13 @@ main>section {
 .set2 {
     transform: scale(2) rotateY(180deg);
     filter: blur(2px);
+    left: 50%;
+    top: 50%;
+}
+
+.set3 {
+    transform: scale(0.8) rotateY(180deg);
+    filter: blur(4px);
+    left: -10%;
+    top: -10%;
 }
