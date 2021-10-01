@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Static Site Requirements Report</title>
+    <style>
+        h1 {
+            text-align: center;
+        }
+        
+        ol {
+            font-size: 1.5rem;
+            margin: 1rem;
+        }
+        
+        ol>li {
+            font-weight: bold;
+            margin-top: 1rem;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Project 1 Expectations Breakdown</h1>
+    <ol>
+        <li>You will create a website with a focused theme and audience of your choosing. Your site might serve a student group, a relative who’s planning a wedding, a business, or an artist who needs a portfolio. The site must serve someone besides yourself.
+            A large part of web design is thinking empathetically, and this requirement makes that explicit.
+        </li>
+        <ul>
+            <li>This website was designed to serve fans of the Miami Heat basketball team. It provides them with a schedule, roster, news, and an animation to enjoy.</li>
+        </ul>
+        <li>Your content must be original and not lifted from other websites. Third-party images are acceptable provided you adhere to their license.
+        </li>
+        <ul>
+            <li>Any resources I found I used free licensing of logos and other images.</li>
+        </ul>
+        <li>Your site must contain at least five separate pages, each having a meaningful purpose. One of the files should be named index.html, which Apache loads by default.
+
+        </li>
+        <ul>
+            <li>index.html - Acts as my home page, explains the site layout and implementation of roster tiles to go to nba.com profile page</li>
+            <li>roster.html - Displays a list of Miami Heat players with stats</li>
+            <li>news.html - Displays recent news about the Miami Heat org and players</li>
+            <li>schedule.html - Displays future schedule of the team</li>
+            <li>animation.html - Displays animation of trophies falling</li>
+        </ul>
+        <li>Your site must include some sort of header.
+        </li>
+        <ul>
+            <li>There is a header of blurry Miami background and the Miami Vice logo in front of it.</li>
+        </ul>
+        <li>Your site must include some sort of navigation links.
+        </li>
+        <ul>
+            <li>Every page has a navigation bar with links to all html files of the site</li>
+        </ul>
+        <li>Your site must support distinct layouts for large and small screens using media queries. For instance, multicolumn layouts on large screens should be reduced to single column layouts on small screens.
+        </li>
+        <ul>
+            <li>All pages of the site dynamically resize and offer scrolling options, also removing content as the screen size limits</li>
+        </ul>
+        <li>Your site must maintain a coherent style across its pages. Repeated style rules must be placed in a shared external stylesheet. Style rules not shared between pages must be placed in separate external stylesheets.
+        </li>
+        <ul>
+            <li>main-style.css serves the function of coherent style and the style rules repeated. All other extenal stylesheets are appropriately named for their respective html file</li>
+        </ul>
+        <li>Your site must include images, and their alt attributes must adequately describe the image content to users of screen readers, user with images disabled, and webcrawlers.
+        </li>
+        <ul>
+            <li>All images have descriptions in the alt tags that adequately describe image content</li>
+        </ul>
+        <li>Each page must declare its favicon.
+        </li>
+        <ul>
+            <li>Each page's favicon is a custom edited svg of the Miami Heat logo that I created</li>
+        </ul>
+        <li>Your site’s non-HTML resources must be organized. Images must be placed in a directory named images. CSS files must be placed in a directory named css. If you include any JavaScript code, these files must be placed in a directory named js.
+        </li>
+        <ul>
+            <li>All assets and folders of the projet are neatly organized in project1</li>
+        </ul>
+        <li>Your site must not be built using any libraries or frameworks. Do not use Bootstrap, jQuery, React, Angular, Vue, or any other third-party tools. You may, however, reimplement the ideas you see in these third-party tools.
+        </li>
+        <ul>
+            <li>No files use any libraries or frameworks</li>
+        </ul>
+        <li>Each page and stylesheet of your site must validate without any warnings or errors using the W3C’s Nu Validator (Links to an external site.)
+        </li>
+        <ul>
+            <li>All html and css files pass the validator</li>
+        </ul>
+        <li>The content should be neatly aligned. The axes of alignment should be clearly visible. Favor left- and right-alignment over centering—as centering does not produce a strong axis of alignment.
+        </li>
+        <ul>
+            <li>All content is neatly aligned across all screen</li>
+        </ul>
+        <li>The content should have adequate and consistent spacing. Text should never bleed against the edge of its containing box.
+        </li>
+        <ul>
+            <li>Text never bleeds to the edge of it's box and content is adequately and consistently spaced</li>
+        </ul>
+        <li>Your site must include at least one form. The form need not do anything at this point in your learning, but it must be present. Like all content, it must be neatly aligned.
+        </li>
+        <ul>
+            <li>The form is included as the login at the top of the page</li>
+        </ul>
+        <li>Your site must include links to external sites.
+        </li>
+        <ul>
+            <li>The site links to mulitple, such as: nba.com, ticket purchasing sites, youtube, various news sources, etc</li>
+        </ul>
+        <li>Your source code must be readable, using conventional and consistent formatting and meaningful names for classes and IDs. Favor kebab-case case identifiers over camelCase.
+        </li>
+        <ul>
+            <li>Source code is readable, elements are meaningfully named and intuitive</li>
+        </ul>
+        <li>Your site must include at least one animation, powered either by CSS or JavaScript.
+        </li>
+        <ul>
+            <li>The site includes a CSS powered animation at animation.html of trophies falling</li>
+        </ul>
+        <li>Your site must be stored in a Git repository that you have shared with your instructor. On GitHub, GitLab, and Bitbucket, share with the user hcientist.
+        </li>
+        <ul>
+            <li>hcientist was added to the repository</li>
+        </ul>
+        <li>The names of your files must be entirely lowercase and contain only alphanumeric characters.
+        </li>
+        <ul>
+            <li>All files match these restrictions</li>
+        </ul>
+        <li>Both https://project1.YOUR-DOMAIN-NAME and http://project1.YOUR-DOMAIN-NAME should resolve to your project 1 site, the latter being redirected to the former as follows.
+        </li>
+        <ul>
+            <li>It does</li>
+        </ul>
+        <li>Your site must be served out over HTTPS on port 443.</li>
+        <ul>
+            <li>It does</li>
+        </ul>
+        <li>Users who access your site over HTTP on port 80 must be automatically redirected to port 443.
+        </li>
+        <ul>
+            <li>It does</li>
+        </ul>
+        <li>Your Git repository should show a steady flow of commits over the course of the project. Committing and pushing should happen steadily, after each work session, and not just right before the due date.
+        </li>
+        <ul>
+            <li>Committing and pushing occured multiple times over the course of work sessions due to debugging Apache-Github interaction at times, but the flow of commits starts late as I initially had trouble configuring my system to be able to properly
+                edit the website</li>
+        </ul>
+        <li>In https://project1.YOUR-DOMAIN-NAME/report.html, write a brief report containing an itemized breakdown of how you believe you have met the expectations listed above.
+        </li>
+        <ul>
+            <li>This is that</li>
+        </ul>
+    </ol>
+</body>
+
+</html>

@@ -78,7 +78,7 @@ header {
 #login {
     display: flex;
     flex-shrink: 2;
-    justify-content: baseline;
+    align-items: baseline;
     border-radius: 15px;
 }
 
@@ -157,7 +157,7 @@ nav>ul>li>a {
     border: solid var(--blue);
 }
 
-#nav_inner_container>h1 {
+#nav_inner_container>p {
     font-size: 70%;
     font-family: sans-serif;
     color: black;
@@ -180,7 +180,6 @@ nav>ul>li>a {
         max-width: 100%;
         width: 100vw;
         flex-shrink: 2;
-        min-height: none;
         height: 7%;
     }
     nav>ul {
@@ -224,6 +223,12 @@ nav>ul>li>a {
         display: none;
     }
     #login>a {
+        display: none;
+    }
+}
+
+@media (max-height: 850px) {
+    header {
         display: none;
     }
 }

@@ -4,7 +4,7 @@ main {
     overflow: hidden;
 }
 
-main>h1 {
+section>h2 {
     font-family: 'Josefin Sans', sans-serif;
     font-size: 4.5rem;
     text-align: center;
@@ -13,7 +13,7 @@ main>h1 {
     transition: 1s;
 }
 
-main>h1 {
+section>h2 {
     font-size: 4rem;
     opacity: 1;
 }
