@@ -14,7 +14,7 @@ main {
     background-blend-mode: overlay;
     overflow-x: hidden;
     overflow-y: auto;
-    height: 85%;
+    height: 88.5%;
     width: 100%;
 }
 
@@ -24,6 +24,7 @@ main {
     padding: 1rem;
     border: solid 0.5rem var(--pink);
     border-radius: 4rem;
+    max-width: 1100px;
 }
 
 .news_wrapper>h1 {
@@ -56,7 +57,7 @@ main {
 @media (max-width: 900px) {
     main {
         align-items: center;
-        height: 78%;
+        height: 81%;
     }
     .news_wrapper>h1 {
         font-size: 3rem;
